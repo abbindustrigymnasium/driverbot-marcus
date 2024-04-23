@@ -3,6 +3,24 @@
 
   -Tanken är att min driver bott ska kunna styras från en hemsida, med hjälp av en broker, det inkluderar styrelse fram, bak, sväng åt höger/vänster.
 
+  Psudo code:
+  
+  skicakar komando fårn hemisida
+  
+  brokern tar imot komando
+
+  brokern skicka vidare till driverbot
+  
+  driverbot utför kommando
+
+
+  Hemsida:
+
+  style //ser bra ut, enkelt navigerad
+
+  möjligheten att kommunicera med broken
+
+  
 ### Hur?
 
   -Ska skicka inputs från hemsidan till en broker som kan skicka detta vidare till driverbotens ESP, som sedan styr motor och servo. Servo ska styra höger/vänster sväng. Motorn ska kunna köra framåt bakåt.
