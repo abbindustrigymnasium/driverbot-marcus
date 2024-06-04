@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(154, 154, 154);
+    background: linear-gradient(180deg, hsl(255,75%,50%) 0%, hsl(196,90%,50%) 100%);
+    background-size: 100vw 100vh;
+    font-family: "Share Tech Mono", monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+.instructions {
+    background-color: rgba(53, 57, 67, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #c2b7ab;
+    text-align: left;
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.control {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.control span {
+    margin-right: 10px;
+}
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #353943;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #834426;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+.back-button:hover {
+    background-color: #1f1f1f;
+    transform: scale(1.05);
+}

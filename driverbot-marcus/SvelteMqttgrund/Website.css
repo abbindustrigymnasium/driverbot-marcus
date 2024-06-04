@@ -1,0 +1,122 @@
+/* Resetting default styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background Style */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, hsl(255, 75%, 60%) 0%, hsl(196, 90%, 70%) 100%);
+  background-size: cover;
+  font-family: "Share Tech Mono", monospace;
+  color: white;
+}
+
+/* Title of The Website */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 3em;
+}
+
+/* Style for the message container */
+.message-container {
+  padding-top: 1em;
+  text-align: center;
+}
+
+/* Keyboard style */
+.keyboard {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for each Key */
+.key {
+  background-color: #353943;
+  border: 1px solid #834426;
+  box-shadow: 6px 6px #c2b7ab;
+  color: #ffffff;
+  width: 100px; /* Adjusted width */
+  height: 85px;
+  margin: 7px; /* Adjusted margin */
+  text-align: center;
+  transition: all 0.07s ease;
+}
+
+/* Active Class for Key */
+.activeKey {
+  transform: scale(1.1);
+  position: relative;
+  top: 0.2em;
+  left: 0.2em;
+  box-shadow: 0 0 0 0;
+  background-color: yellow; /* Highlight color */
+}
+
+/* Sets font size for each Key */
+.key > p {
+  font-size: 1.5em;
+}
+
+/* Style for the settings button */
+.settings-button {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 12px 28px;
+  background-color: #353943;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #834426;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.settings-button:hover {
+  background-color: #1f1f1f;
+  transform: scale(1.05);
+}
+
+/* Adjust layout of the keys */
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Position R button */
+.row .key[data-key="82"] {
+  position: relative;
+  left: 250%; /* Adjusted position */
+}
+
+/* Visual indicator for active keys */
+.key.activeKey {
+  background-color: yellow; /* Example visual indicator */
+  transition: background-color 0.3s ease;
+}
+
+/* Record Circle Indecator */
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black; /* Default color when not recording */
+  border: 1mm solid rgb(0, 0, 0); /* Outline color */
+  position: fixed; /* So it stays in place */
+  top: 407px;
+  right: 290px;
+}
+
+/* Record Circle When Active */
+.circle.recording {
+  background-color: red;
+}
